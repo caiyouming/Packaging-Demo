@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			#sld{
+				width: 590px;
+				height: 470px;
+				border: 3px solid red;
+				margin: 20px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			#sld .sld_img{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 4130px;
+				height: 470px;
+			}
+			#sld .sld_img img{
+				float: left;
+			}
+			#sld ul{
+				width: 350px;
+				height: 35px;
+				position: absolute;
+				left: 240px;
+				bottom: 0px;
+				background: greenyellow;
+				opacity: 0.6;
+				z-index: 5;
+			}
+			#sld ul li{
+				width: 50px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				text-decoration: none;
+				list-style: none;
+				float: left;
+			}
+			#sld ul li:hover{
+				background: white;
+				opacity: 0.6;
+				cursor: pointer;
+			}
+		</style>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<div id="sld">
+			<div class="sld_img">
+				<img src="../js/images/jd1.jpg" alt="" />
+				<img src="../js/images/jd2.jpg" alt="" />
+				<img src="../js/images/jd3.jpg" alt="" />
+				<img src="../js/images/jd4.jpg" alt="" />
+				<img src="../js/images/jd5.jpg" alt="" />
+				<img src="../js/images/jd6.jpg" alt="" />
+				<img src="../js/images/jd7.jpg" alt="" />
+			</div>
+			<ul class="sld_btn">
+				<li style="background: white;opacity: 0.6;">美丽</li>
+				<li>漂亮</li>
+				<li>嘻嘻</li>
+				<li>哈哈</li>
+				<li>牛逼</li>
+				<li>无语</li>
+				<li>彩笔</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+
+
