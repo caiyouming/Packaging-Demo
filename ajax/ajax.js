@@ -1,7 +1,12 @@
 function ajax({url,type,data,dataType}){
   return new Promise(function(open,err){
 		//1. 创建xhr对象
-		var xhr=new XMLHttpRequest();
+		var xhr=null;
+		if(window.XMLHttpRequest){
+			xhr=new XMLHttpRequest();
+		}else{
+			xhr=new ActiveXObject("Microsoft.XMLHttp");
+		}
 		//2.绑定监听事件
 		xhr.onreadystatechange=function(){
 			if(xhr.readyState==4&&xhr.status==200){
